@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+	<title></title>
+	<style type="text/css">
+		body {
+			background: black;
+		}
+		.key {
+			background: white;
+			flex-grow: 1;
+			height: 200px;
+			border: 1px solid black;
+			border-radius: 0 0 5px 5px;
+		}
+		.container{
+			display: flex;
+			width: 350px;
+			position: relative;
+			margin: auto;
+		}
+		.black {
+			background: black;
+			position: absolute;
+			height: 120px;
+			width: 30px;
+		}
+		#c_s {
+			left: 35px;
+		}
+
+		#d_s {
+			left: 85px;
+		}
+
+		#f_s {
+			left: 185px;
+		}
+
+		#g_s {
+			left: 235px;
+		}
+
+		#a_s{
+			left: 285px;
+		}
+
+		.active{
+			background: yellow;
+		}
+
+		.text {
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="white key" id="c"></div>
+		<div class="white key" id="d"></div>
+		<div class="white key" id="e"></div>
+		<div class="white key" id="f"></div>
+		<div class="white key" id="g"></div>
+		<div class="white key" id="a"></div>
+		<div class="white key" id="b"></div>
+		<div class="black key" id="c_s"></div>
+		<div class="black key" id="d_s"></div>
+		<div class="black key" id="f_s"></div>
+		<div class="black key" id="g_s"></div>
+		<div class="black key" id="a_s"></div>
+	</div>
+
+	<div class="text">Use Left and Right key to change the octave. Use keyboard to play.</div>
+
+	<script type="text/javascript" src="keyboard.js"></script>
+</body>
+</html>
